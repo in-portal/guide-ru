@@ -104,7 +104,7 @@ html_context = {
     "display_github": True,
     "github_user": "in-portal",
     "github_repo": "guide-ru",
-    "github_version": version,
+    "github_version": "main",
     "conf_py_path": "/docs/",
 }
 
