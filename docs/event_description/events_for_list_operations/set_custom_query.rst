@@ -1,5 +1,5 @@
 SetCustomQuery
-~~~~~~~~~~~~~~
+==============
 `Data Source`_
 
 ...

@@ -1,5 +1,5 @@
 Counters
-~~~~~~~~
+========
 `Data Source`_
 
 ...

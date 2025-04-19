@@ -1,5 +1,5 @@
 ProductOptionCombinations
-~~~~~~~~~~~~~~~~~~~~~~~~~
+=========================
 `Data Source`_
 
 ...

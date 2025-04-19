@@ -1,5 +1,5 @@
 ConfigurationValues
-~~~~~~~~~~~~~~~~~~~
+===================
 `Data Source`_
 
 ...

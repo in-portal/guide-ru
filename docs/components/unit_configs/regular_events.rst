@@ -1,5 +1,5 @@
 Regular Events
-~~~~~~~~~~~~~~
+==============
 `Data Source`_
 
 ...

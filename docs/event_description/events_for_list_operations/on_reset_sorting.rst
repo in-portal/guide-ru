@@ -1,5 +1,5 @@
 OnResetSorting
-~~~~~~~~~~~~~~
+==============
 `Data Source`_
 
 ...

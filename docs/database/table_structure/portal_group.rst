@@ -1,5 +1,5 @@
 PortalGroup
-~~~~~~~~~~~
+===========
 `Data Source`_
 
 ...

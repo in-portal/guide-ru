@@ -1,5 +1,5 @@
 OnSetAutoRefreshInterval
-~~~~~~~~~~~~~~~~~~~~~~~~
+========================
 `Data Source`_
 
 ...

@@ -1,5 +1,5 @@
 Products
-~~~~~~~~
+========
 `Data Source`_
 
 ...

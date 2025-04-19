@@ -1,5 +1,5 @@
 Images
-~~~~~~
+======
 `Data Source`_
 
 ...

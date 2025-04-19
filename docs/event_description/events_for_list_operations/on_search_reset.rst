@@ -1,5 +1,5 @@
 OnSearchReset
-~~~~~~~~~~~~~
+=============
 `Data Source`_
 
 ...

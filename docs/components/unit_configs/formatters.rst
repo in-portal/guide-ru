@@ -1,5 +1,5 @@
 Formatters
-~~~~~~~~~~
+==========
 `Data Source`_
 
 ...

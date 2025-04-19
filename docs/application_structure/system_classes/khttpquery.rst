@@ -1,5 +1,5 @@
 KHTTPQuery
-~~~~~~~~~~
+==========
 `Data Source`_
 
 ...

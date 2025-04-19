@@ -1,5 +1,5 @@
 Events
-~~~~~~
+======
 `Data Source`_
 
 ...

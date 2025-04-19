@@ -1,5 +1,5 @@
 ProductOptions
-~~~~~~~~~~~~~~
+==============
 `Data Source`_
 
 ...

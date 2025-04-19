@@ -1,5 +1,5 @@
 AjaxDropdownPreloader
-~~~~~~~~~~~~~~~~~~~~~
+=====================
 `Data Source`_
 
 ...

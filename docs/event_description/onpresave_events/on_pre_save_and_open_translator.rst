@@ -1,5 +1,5 @@
 OnPreSaveAndOpenTranslator
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+==========================
 `Data Source`_
 
 ...

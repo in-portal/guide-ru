@@ -1,5 +1,5 @@
 OnSearch
-~~~~~~~~
+========
 `Data Source`_
 
 ...

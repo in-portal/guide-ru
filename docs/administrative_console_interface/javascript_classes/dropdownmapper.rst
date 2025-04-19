@@ -1,5 +1,5 @@
 DropDownMapper
-~~~~~~~~~~~~~~
+==============
 `Data Source`_
 
 ...

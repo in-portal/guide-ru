@@ -1,5 +1,5 @@
 OnSetPerPage
-~~~~~~~~~~~~
+============
 `Data Source`_
 
 ...

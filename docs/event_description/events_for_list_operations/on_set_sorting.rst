@@ -1,5 +1,5 @@
 OnSetSorting
-~~~~~~~~~~~~
+============
 `Data Source`_
 
 ...

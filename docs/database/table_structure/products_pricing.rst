@@ -1,5 +1,5 @@
 ProductsPricing
-~~~~~~~~~~~~~~~
+===============
 `Data Source`_
 
 ...

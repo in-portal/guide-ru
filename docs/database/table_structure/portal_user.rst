@@ -1,5 +1,5 @@
 PortalUser
-~~~~~~~~~~
+==========
 `Data Source`_
 
 ...

@@ -1,5 +1,5 @@
 OnAfterConfigRead
-~~~~~~~~~~~~~~~~~
+=================
 `Data Source`_
 
 ...

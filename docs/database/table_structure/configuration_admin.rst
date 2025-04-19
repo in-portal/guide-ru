@@ -1,5 +1,5 @@
 ConfigurationAdmin
-~~~~~~~~~~~~~~~~~~
+==================
 `Data Source`_
 
 ...

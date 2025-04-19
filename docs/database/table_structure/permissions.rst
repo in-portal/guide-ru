@@ -1,5 +1,5 @@
 Permissions
-~~~~~~~~~~~
+===========
 `Data Source`_
 
 ...

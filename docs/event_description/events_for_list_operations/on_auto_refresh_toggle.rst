@@ -1,5 +1,5 @@
 OnAutoRefreshToggle
-~~~~~~~~~~~~~~~~~~~
+===================
 `Data Source`_
 
 ...
