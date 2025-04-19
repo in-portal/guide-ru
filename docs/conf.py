@@ -6,6 +6,8 @@
 import sys
 import os
 
+sys.path.insert(0, os.path.abspath('./_ext'))
+
 # Use theme, that was once default, but now replaced by the Alabaster
 import sphinx_rtd_theme
 html_theme = 'sphinx_rtd_theme'
@@ -19,6 +21,7 @@ html_theme = 'sphinx_rtd_theme'
 extensions = [
     'sphinx_rtd_theme',
     'sphinx.ext.autodoc',
+    'config_property',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
