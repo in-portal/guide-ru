@@ -3,9 +3,10 @@
 
 `Data Source`_
 
-...
+Краткое описание содержания категории ...
 
 .. toctree::
+   :caption: Содержание
    :maxdepth: 2
 
    system_setup/configuration_variables
