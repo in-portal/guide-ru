@@ -8,6 +8,8 @@ import os
 
 sys.path.insert(0, os.path.abspath('./_ext'))
 
+language = "ru"
+
 # Use theme, that was once default, but now replaced by the Alabaster
 import sphinx_rtd_theme
 html_theme = 'sphinx_rtd_theme'
