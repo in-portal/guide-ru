@@ -2,9 +2,9 @@
 
 ## Preparations
 
-1. install [Sphinx](http://sphinx-doc.org/): `easy_install -U Sphinx`
-2. install [Read the Docs Sphinx Theme](https://github.com/snide/sphinx_rtd_theme): `pip install sphinx_rtd_theme`
-3. install [sphinx-autobuild](https://pypi.python.org/pypi/sphinx-autobuild/0.2.3): `pip install sphinx-autobuild`
+1. install [Sphinx](http://sphinx-doc.org/): `pip install -U sphinx`
+2. install [Read the Docs Sphinx Theme](https://github.com/snide/sphinx_rtd_theme): `pip install -U sphinx_rtd_theme`
+3. install [sphinx-autobuild](https://pypi.python.org/pypi/sphinx-autobuild/0.2.3): `pip install -U sphinx-autobuild`
 
 ## Automatic building
 
