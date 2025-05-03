@@ -24,6 +24,7 @@ extensions = [
     'sphinx_rtd_theme',
     'sphinx.ext.autodoc',
     'config_property',
+    'clear_float',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
