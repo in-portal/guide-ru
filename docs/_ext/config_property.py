@@ -33,6 +33,7 @@ class ConfigProperty(Directive):
 
             label_id = ref_prefix.lower() + target_id
             env.domaindata['std']['labels'][label_id] = (env.docname, target_id, name)
+            env.domaindata['std']['anonlabels'][label_id] = (env.docname, target_id)
 
         # Create text to show.
         name_node = nodes.strong(text=name)
