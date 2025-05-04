@@ -65,6 +65,10 @@ pygments_style = 'sphinx'
 
 highlight_language = 'php'
 
+highlight_options = {
+  'php': {'startinline': True},
+}
+
 # A list of ignored prefixes for module index sorting.
 #modindex_common_prefix = []
 
