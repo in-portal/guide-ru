@@ -1,6 +1,9 @@
 from docutils import nodes
 from docutils.parsers.rst import Directive, directives
 
+# from sphinx.util import logging
+# logger = logging.getLogger(__name__)
+
 class ConfigProperty(Directive):
     """
     This template is created to be used for creating specially formatted lists
@@ -34,6 +37,8 @@ class ConfigProperty(Directive):
             label_id = ref_prefix.lower() + target_id
             env.domaindata['std']['labels'][label_id] = (env.docname, target_id, name)
             env.domaindata['std']['anonlabels'][label_id] = (env.docname, target_id)
+
+            # logger.warning("sample warning text")
 
         # Create text to show.
         name_node = nodes.strong(text=name)
