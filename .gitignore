@@ -1,3 +1,4 @@
 .idea
 docs/build
 docs/_ext/__pycache__/
+/tmp/
