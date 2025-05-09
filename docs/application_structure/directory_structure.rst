@@ -4,13 +4,6 @@
 `Eng Data Source`_
 `Confluence`_
 
-.. caution::
-
-   Broken links:
-
-   - `upgrade <K4:Обновление_проектов>`__
-
-
 Проекты, написанные с использованием K4 имеют модульную структуру. Каждый модуль представляет из себя директорию,
 находящуюся в корневой директории сайта. У всех модулей одинаковая структура поддиректорий, которая показана ниже:
 
@@ -90,3 +83,9 @@
 .. _Data Source: http://guide.in-portal.org/rus/index.php/K4:%D0%A1%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0_%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D0%B9
 .. _Eng Data Source: http://guide.in-portal.org/eng/index.php/K4:Folder_Structure
 .. _Confluence: http://community.in-portal.org/pages/viewpage.action?pageId=14155807
+
+.. include:: /includes/broken_links.rst
+
+.. Broken Links:
+   =============
+   K4:Обновление_проектов

@@ -3,12 +3,6 @@
 `Data Source`_
 `Confluence`_
 
-.. caution::
-
-   Broken links:
-
-   - `орфографических подсказок <K4:SpellingDictionary>`__
-
 Здесь описаны все доступные переменные конфигурации K4. Каждая переменная представляет из себя запись в 2-х таблицах:
 
 - :doc:`/database/table_structure/configuration_admin` - визуальное представление переменной в административной консоли;
@@ -456,3 +450,9 @@ In-Commerce
 
 .. _Data Source: http://guide.in-portal.org/rus/index.php/K4:Configuration
 .. _Confluence: http://community.in-portal.org/pages/viewpage.action?pageId=14155801
+
+.. include:: /includes/broken_links.rst
+
+.. Broken Links:
+   =============
+   K4:SpellingDictionary
