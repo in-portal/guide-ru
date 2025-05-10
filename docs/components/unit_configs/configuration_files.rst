@@ -8,6 +8,21 @@
    :ref_prefix: uc_
 
 .. config-property::
+   :name: QueryString
+   :type: array
+   :ref_prefix: uc_
+
+.. config-property::
+   :name: PortalStyleEnv
+   :type: boolean
+   :ref_prefix: uc_
+
+.. config-property::
+   :name: AutoLoad
+   :type: boolean
+   :ref_prefix: uc_
+
+.. config-property::
    :name: Fields
    :type: array
    :ref_prefix: uc_
