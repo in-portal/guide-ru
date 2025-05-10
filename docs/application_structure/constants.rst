@@ -158,7 +158,8 @@
 |                               |                                                                                                |
 |                               |    <inp2:m_RenderElement name="block_name" layout_view="1"/>                                   |
 |                               |                                                                                                |
-|                               | В `теме <K4:Theme>`__ ``default2007`` это блоки ``sidebar`` и ``content`` из текущего шаблона. |
+|                               | В :doc:`теме </database/table_structure/theme>` ``default2007`` это блоки ``sidebar`` и        |
+|                               | ``content`` из текущего шаблона.                                                               |
 +-------------------------------+------------------------------------------------------------------------------------------------+
 | .. config-property::          | .. versionadded:: 5.0.0                                                                        |
 |    :name: EDITING_MODE_DESIGN |                                                                                                |
@@ -171,7 +172,8 @@
 |                               |                                                                                                |
 |                               |    <inp2:m_RenderElement name="element_name" design="design_block_name"/>                      |
 |                               |                                                                                                |
-|                               | В `теме <K4:Theme>`__ ``default2007`` это блоки ``blue_box`` и ``content_box``.                |
+|                               | В :doc:`теме </database/table_structure/theme>` ``default2007`` это блоки ``blue_box`` и       |
+|                               | ``content_box``.                                                                               |
 +-------------------------------+------------------------------------------------------------------------------------------------+
 
  - разное:
@@ -309,5 +311,4 @@
    =============
    In-Commerce:Discounts_&_Coupons
    K4:Ajax
-   K4:Theme
    K4:Application
