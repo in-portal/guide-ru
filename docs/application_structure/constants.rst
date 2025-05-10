@@ -154,7 +154,7 @@
 |    :ref_prefix: const_        | Режим редактирования сайта, при котором изменяться может изменяться только содержание блоков,  |
 |                               | при подключении которых был передан параметр ``layout_view``:                                  |
 |                               |                                                                                                |
-|                               | .. code:: xml                                                                                  |
+|                               | .. code:: html                                                                                 |
 |                               |                                                                                                |
 |                               |    <inp2:m_RenderElement name="block_name" layout_view="1"/>                                   |
 |                               |                                                                                                |
@@ -168,7 +168,7 @@
 |                               | ``design_block_name``) при подключении других (в примере это ``element_name``)                 |
 |                               | блоков. Например:                                                                              |
 |                               |                                                                                                |
-|                               | .. code:: xml                                                                                  |
+|                               | .. code:: html                                                                                 |
 |                               |                                                                                                |
 |                               |    <inp2:m_RenderElement name="element_name" design="design_block_name"/>                      |
 |                               |                                                                                                |
