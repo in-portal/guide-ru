@@ -8,6 +8,7 @@
    :maxdepth: 1
 
    table_structure/cache
+   table_structure/category
    table_structure/configuration_admin
    table_structure/configuration_values
    table_structure/counters
