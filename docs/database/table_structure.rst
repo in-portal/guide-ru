@@ -14,6 +14,7 @@
    table_structure/events
    table_structure/images
    table_structure/item_review
+   table_structure/language
    table_structure/permissions
    table_structure/persistant_session_data
    table_structure/portal_group
@@ -23,6 +24,7 @@
    table_structure/products
    table_structure/products_pricing
    table_structure/session_data
+   table_structure/theme
    table_structure/user_group
    table_structure/user_session
 
