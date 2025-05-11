@@ -27,5 +27,13 @@
     margin-bottom: 0 !important;
 }
 
+/* honor margin of lists/admonitions, when placed next to a floated image */
+div.float-fixer {
+    overflow: auto;
+}
 
-
+div.float-fixer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
