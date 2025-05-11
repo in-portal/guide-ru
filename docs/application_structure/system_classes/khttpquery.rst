@@ -16,7 +16,7 @@ KHTTPQuery
    - данные, которые пользователь передал скрипту
    - данные из разобранной :doc:`переменной окружения </application_structure/environment_variable>`
    - данные пользовательских переменных (наподобие массива
-     `$_GLOBALS <http://lv2.php.net/manual/ru/reserved.variables.php#reserved.variables.globals>`__)
+     `$_GLOBALS <https://www.php.net/reserved.variables.globals>`__)
 
    Под понятием данных пользователя подразумевается содержание следующих, встроенных в php, массивов:
 
