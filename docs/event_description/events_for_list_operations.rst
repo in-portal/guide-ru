@@ -10,6 +10,10 @@
    events_for_list_operations/set_custom_query
    events_for_list_operations/on_mass_clone
    events_for_list_operations/on_mass_delete
+   events_for_list_operations/on_mass_approve
+   events_for_list_operations/on_mass_decline
+   events_for_list_operations/on_mass_move_up
+   events_for_list_operations/on_mass_move_down
    events_for_list_operations/on_search
    events_for_list_operations/on_search_reset
    events_for_list_operations/on_set_auto_refresh_interval
