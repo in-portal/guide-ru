@@ -8,7 +8,17 @@
    :ref_prefix: uc_
 
 .. config-property::
+   :name: SectionPrefix
+   :type: string
+   :ref_prefix: uc_
+
+.. config-property::
    :name: QueryString
+   :type: array
+   :ref_prefix: uc_
+
+.. config-property::
+   :name: PermSection
    :type: array
    :ref_prefix: uc_
 
