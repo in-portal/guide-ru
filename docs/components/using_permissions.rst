@@ -11,7 +11,7 @@
 На заре существования K4 глобальная система разделения доступа отсутствовала, а для отдельных случаев, при
 необходимости, писалась простая, специфичная для конкретного `проекта <K4:Projects>`__ система. Была система
 управления правами для ``In-Portal``, работающая только для отдельных ``items``. А в целом система оставалась
-легко поддающейся взлому. Стоило только знать названия некоторых :doc:`событий </event_description>` и принцип
+легко поддающейся взлому. Стоило только знать названия некоторых :doc:`событий </events>` и принцип
 построения `имён полей на форме <TagProcessor:InputName>`__.
 
 Но прогресс не стоит на месте, и со временем стало очевидно, что K4 нуждается в стандартизированной системе
@@ -124,10 +124,10 @@
 Связывание прав и событий
 -------------------------
 
-Права доступа проверяются также для запуске :doc:`событий </event_description>` (``events``), инициированных по данным
+Права доступа проверяются также для запуске :doc:`событий </events>` (``events``), инициированных по данным
 запроса к серверу (например, если в запросе присутствует переменная вида ``prefix_event``). Чтобы связать событие с
 правом(-ами) доступа, используется метод ``kDBEventHandler::mapPermissions()``. В данном методе объявляется массив,
-определяющий права доступа для :doc:`событий </event_description>`.
+определяющий права доступа для :doc:`событий </events>`.
 
 .. code:: php
 
@@ -146,9 +146,9 @@
 
 При проверке прав доступа для события массив ``kDBEventHandler::permMapping`` обрабатывается по следующим правилам:
 
-- находится ключ с именем события у :doc:`обработчика событий </event_description>`, объявленного в
+- находится ключ с именем события у :doc:`обработчика событий </events>`, объявленного в
   :doc:`unit config </components/unit_configs/configuration_files>` у :ref:`префикса <uc_Prefix>`, для которого
-  :doc:`событие </event_description>` вызывается;
+  :doc:`событие </events>` вызывается;
 - если данный :ref:`префикс <uc_Prefix>` является :doc:`главным </components/working_with_sub_prefixes>`
   (в конкретном случае, так как один и тот же префикс может быть и
   :doc:`главным, и подчинённым </components/working_with_sub_prefixes>` в разных ситуациях), то получается значение
@@ -173,28 +173,24 @@
 
 Также дополнительно осуществляются приведённые ниже проверки.
 
-- Только для пользовательской части сайта из события :doc:`/event_description/general_purpose_events/on_item_build`
+- Только для пользовательской части сайта из события :doc:`/events/general/on_item_build`
   вызывается проверка ``view`` права (т.е. права на просмотр данных). Данная проверка происходит только тогда, когда в
   запросе, полученном сервером присутствует ``ID`` объекта и объект пытается использовать его для
   :doc:`получения данных </application_structure/system_classes/working_with_kdbitem_class>` из
   :doc:`базы данных </database/working_with_the_database>`.
 
-- В некоторых событиях, изменяющих данные в базе данных (:doc:`/event_description/events_for_editing_records/on_delete`,
-  :doc:`/event_description/events_for_list_operations/on_mass_delete`,
-  :doc:`/event_description/events_in_temporary_tables/on_save`,
-  :doc:`/event_description/events_for_list_operations/on_mass_clone`,
-  :doc:`/event_description/events_for_list_operations/on_mass_approve`,
-  :doc:`/event_description/events_for_list_operations/on_mass_decline`,
-  :doc:`/event_description/events_for_list_operations/on_mass_move_up`,
-  :doc:`/event_description/events_for_list_operations/on_mass_move_down`) проверяется право ``SYSTEM_ACCESS.READONLY``.
-  В случае, когда это право установлено, то :doc:`пользователь </database/table_structure/portal_user>` не может
-  изменять никакие данные в системе.
+- В некоторых событиях, изменяющих данные в базе данных (:doc:`/events/live_editing/on_delete`,
+  :doc:`/events/lists/on_mass_delete`, :doc:`/events/temp_editing/on_save`, :doc:`/events/lists/on_mass_clone`,
+  :doc:`/events/lists/on_mass_approve`, :doc:`/events/lists/on_mass_decline`, :doc:`/events/lists/on_mass_move_up`,
+  :doc:`/events/lists/on_mass_move_down`) проверяется право ``SYSTEM_ACCESS.READONLY``. В случае, когда это право
+  установлено, то :doc:`пользователь </database/table_structure/portal_user>` не может изменять никакие данные в
+  системе.
 
 Проверка прав доступа из PHP-кода
 ---------------------------------
 
 Система прав доступа имеет возможность проверки прав из произвольного места PHP-кода (напр.
-:doc:`событий </event_description>` или :doc:`тэгов </themes_and_templates/working_with_templates>`). Для вызова
+:doc:`событий </events>` или :doc:`тэгов </themes_and_templates/working_with_templates>`). Для вызова
 проверки права доступа из PHP-кода следует использовать конструкцию следующего вида:
 
 .. code:: php
@@ -238,16 +234,16 @@
    Если :doc:`секция </administrative_console_interface/working_with_templates_and_blocks/adding_sections_in_tree>` в
    названии :doc:`права доступа </database/table_structure/permissions>` совпадает с секцией
    :ref:`префикса <uc_Prefix>`, от которого произошло событие, то для получения названия секции нужно использовать
-   метод ``kEvent:getSection`` (т.е. следующий код в :doc:`событии </event_description>` ``$event->getSection();``.
+   метод ``kEvent:getSection`` (т.е. следующий код в :doc:`событии </events>` ``$event->getSection();``.
 
 Индивидуальная проверка
 -----------------------
 
 Для того, чтобы проверить :doc:`права доступа </database/table_structure/permissions>` на выполнение
-:doc:`события </event_description>` нестандартным способом требуется переписать метод
+:doc:`события </events>` нестандартным способом требуется переписать метод
 ``kDBEventHandler::CheckPermission`` (главное в переписанном методе не забыть вызвать родительской метод).
 Следует обратить особое внимание на то, что данный метод вызывается до выполнения запрашиваемого пользователем
-:doc:`события </event_description>` и объект, участвующий в событии ещё не инициализирован данными запроса к
+:doc:`события </events>` и объект, участвующий в событии ещё не инициализирован данными запроса к
 серверу. Также следует помнить о том, что в практике переписывание методов проверки прав доступа действительно
 нужно очень редко, и большинство проблем можно решить, используя стандартные механизмы.
 
@@ -269,7 +265,7 @@
 +-------------------------+----------------------------------------------------------------------------------+
 | название                | описание                                                                         |
 +=========================+==================================================================================+
-| .. config-property::    | Название :doc:`события </event_description>`, наличие                            |
+| .. config-property::    | Название :doc:`события </events>`, наличие                                       |
 |    :name: perm_event    | :doc:`права </database/table_structure/permissions>` вызова которого             |
 |    :type: string        | требуется проверить. Событие задаётся в форме ``prefix_special:EventName``,      |
 |    :ref_prefix: tag_cp_ | напр. ``phone:OnChangePrice``.                                                   |

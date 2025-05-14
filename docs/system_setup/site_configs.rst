@@ -8,7 +8,7 @@ Site Configs
    .. versionadded:: 5.0.0
 
 Функциональность "Site Configs" является упрощённым вариантом использования события
-:doc:`/event_description/general_purpose_events/on_after_config_read` и доступна для всех
+:doc:`/events/general/on_after_config_read` и доступна для всех
 :doc:`конфигурационных файлов </components/unit_configs/configuration_files>` (префиксов) в
 системе. Для использования данной функциональности не требуется создавать или
 :doc:`регистрировать </components/unit_configs/class_registration>` новые классы
