@@ -8,7 +8,6 @@
    :maxdepth: 2
 
    database/working_with_the_database
-   database/table_structure
    database/working_with_temporary_tables
    database/useful_sqls
    database/counters
