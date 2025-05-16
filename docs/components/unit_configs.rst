@@ -2,7 +2,8 @@ Unit Configs
 ************
 `Data Source`_
 
-...
+В данной категории находятся статьи о том, что и как надо писать в
+:doc:`unit configs </components/unit_configs/configuration_files>` и к чему это приведёт.
 
 .. toctree::
    :maxdepth: 1
