@@ -41,4 +41,5 @@ where it's opened will be reloaded automatically as well.
 :ref:`tc_Theme_sample` - the "sample" column of the "Theme" database table
 :ref:`tc_UserSession_sample` - the "sample" column of the "UserSession" database table
 :ref:`cfg_sample` - the "sample" configuration variable
+:ref:`form_control_sample` - the "sample" form control
 ```
