@@ -148,9 +148,8 @@
 Т.к. переменная окружения используется только для компактной передачи данных между страницами сайта, то единственным
 способом в неё что-либо записать является построение ссылки. Все ссылки в K4 строятся используя метод
 ``Application::HREF``. Например он используется в методе ``Application::Redirect``, а также в
-:doc:`тэгах </themes_and_templates/working_with_templates>` `m_Link <TagProcessor:m_Link>`__,
-`st_ContentBlock <TagProcessor:st_ContentBlock>`__, `lang_LanguageLink <TagProcessor:lang_LanguageLink>`__ и
-`m_FormAction <TagProcessor:m_FormAction>`__. Этот метод принимает 4 описанных ниже параметра.
+:doc:`тэгах </themes_and_templates/working_with_templates>` :doc:`/tags/m_link`, :doc:`/tags/st_content_block`,
+:doc:`/tags/lang_language_link` и :doc:`/tags/m_form_action`. Этот метод принимает 4 описанных ниже параметра.
 
 +-----------------------+-----------------------------------------------------------------------------------------------------+
 | параметр              | описание                                                                                            |
@@ -275,8 +274,8 @@
 Запись данных
 =============
 
-Запись значений в переменную окружения из шаблонов сводится к формированию ссылки, по которой в последствии перейдёт
-пользователь. Формирование ссылок внутри шаблонов производится с помощью тэга `m_Link <TagProcessor:m_Link>`__.
+Запись значений в переменную окружения из шаблонов сводится к формированию ссылки, по которой в последствии
+перейдёт пользователь. Формирование ссылок внутри шаблонов производится с помощью тэга :doc:`/tags/m_link`.
 В ниже приведённом примере продемонстрировано его использование.
 
 Запись данных из шаблонов
@@ -286,7 +285,7 @@
 
    <a href="<inp2:m_Link template='cart' cart_event='OnAddProduct' pass='m,cart,product'/>">Add To Cart</a>
 
-Ниже приведено описание параметров тэга `m_Link <TagProcessor:m_Link>`__, использованных в выше приведённом примере.
+Ниже приведено описание параметров тэга :doc:`/tags/m_link`, использованных в выше приведённом примере.
 
 +----------------------+----------------------------------------------------------------------------------------------+
 | параметр             | пояснение                                                                                    |
@@ -402,15 +401,6 @@
 |    :type: int        | названия массива ``opener_stack_<m_wid>``, управляемого через значение переменной :ref:`env_m_opener`.        |
 |    :ref_prefix: env_ |                                                                                                               |
 +----------------------+---------------------------------------------------------------------------------------------------------------+
-
-.. include:: /includes/broken_links.rst
-
-.. Broken Links:
-   =============
-   TagProcessor:m_Link
-   TagProcessor:st_ContentBlock
-   TagProcessor:lang_LanguageLink
-   TagProcessor:m_FormAction
 
 .. _Data Source: http://guide.in-portal.org/rus/index.php/K4:%D0%9F%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F_%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F
 .. _Eng Data Source: http://guide.in-portal.org/eng/index.php/K4:Environment_Variable
