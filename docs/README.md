@@ -43,4 +43,5 @@ where it's opened will be reloaded automatically as well.
 :ref:`cfg_sample` - the "sample" configuration variable
 :ref:`form_control_sample` - the "sample" form control
 :ref:`hook_sample` - the "sample" hook property
+:ref:`regular_event_sample` - the "sample" regular event property
 ```
