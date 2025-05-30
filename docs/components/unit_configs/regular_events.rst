@@ -61,9 +61,8 @@ Regular Events
 Пример
 ------
 
-Для того, чтобы добавить новое регулярное событие его надо сначала написать, а потом в его
-:doc:`unit config </components/unit_configs/configuration_files>` в опции :ref:`uc_RegularEvents` добавить
-новый ключ:
+Для того, чтобы добавить новое регулярное событие его надо сначала написать, а потом в его |unit_config_link|
+в опции :ref:`uc_RegularEvents` добавить новый ключ:
 
 .. code:: php
 
@@ -78,8 +77,8 @@ Regular Events
 +--------------------------------+-----------------------------------------------------------------------------+
 | название опции                 | описание опции                                                              |
 +================================+=============================================================================+
-| .. config-property::           | Название события в текущем                                                  |
-|    :name: EventName            | :doc:`unit config </components/unit_configs/configuration_files>`.          |
+| .. config-property::           | Название события в текущем |unit_config_link|.                              |
+|    :name: EventName            |                                                                             |
 |    :type: string               |                                                                             |
 |    :ref_prefix: regular_event_ |                                                                             |
 +--------------------------------+-----------------------------------------------------------------------------+
@@ -96,3 +95,5 @@ Regular Events
 
 .. _Data Source: http://guide.in-portal.org/rus/index.php/K4:Regular_Events
 .. _Eng Data Source: http://guide.in-portal.org/eng/index.php/Regular_Events
+
+.. |unit_config_link| replace:: :doc:`unit config </components/unit_configs/config_files>`

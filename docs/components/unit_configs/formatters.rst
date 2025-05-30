@@ -156,7 +156,7 @@ kOptionsFormatter
 |    :ref_prefix: fmt_         | (тот, что после слова ``WHERE``). Т.е. если в опции :ref:`fmt_options_sql` был применён                               |
 |                              | фильтр, то его необходимо продублировать здесь. Используется для корректной выборки                                   |
 |                              | опций в блоке                                                                                                         |
-|                              | :doc:`inp_edit_picker </administrative_console_interface/working_with_forms/working_with_editpickerhelper_class>`.    |
+|                              | :doc:`inp_edit_picker </admin_console_ui/forms/editpickerhelper_class>`.                                              |
 +------------------------------+-----------------------------------------------------------------------------------------------------------------------+
 
 Можно комбинировать статические и динамические опции, т.е. задавать полю опцию :ref:`fmt_options`

@@ -7,8 +7,8 @@
 .. toctree::
    :maxdepth: 2
 
-   database/working_with_the_database
-   database/working_with_temporary_tables
+   database/using_database
+   database/using_temporary_tables
    database/useful_sqls
    database/counters
 

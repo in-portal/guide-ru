@@ -129,7 +129,7 @@
        $this->permMapping = array_merge($this->permMapping, $permissions);
    }
 
-Если в :doc:`unit config </components/unit_configs/configuration_files>`, в котором указан класс, содержащий
+Если в :doc:`unit config </components/unit_configs/config_files>`, в котором указан класс, содержащий
 обработчик события находиться опция :ref:`uc_SubItems`, то названия прав доступа нужно указывать в ключе
 ``self``. Если такой опции нету, то названия прав доступа нужно указывать в ключе ``subitem``.
 Если требуется указать несколько прав доступа одновременно, то нужно их разделять используя вертикальную черту

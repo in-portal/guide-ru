@@ -23,7 +23,7 @@
 - **обязательные** - должны всегда присутствовать;
 - **проверки соответствия** (validation) - используются при проверки соответствия значения в поле
   с наложенными ограничениями на значение в поле;
-- **форматера** - используются указанным :doc:`форматером </components/unit_configs/formatters>`.
+- **форматера** - используются указанным |formatters_link|.
 
 Обязательные опции
 ------------------
@@ -209,7 +209,7 @@
 Опции форматера
 ---------------
 
-Все оставшиеся опции обрабатываются указанным :doc:`форматером </components/unit_configs/formatters>`.
+Все оставшиеся опции обрабатываются указанным |formatters_link|.
 Вот, к примеру некоторые из них:
 
 +----------------------+--------------------------------------------------------------------------------------+
@@ -237,7 +237,7 @@
 
 - пойти в секцию "Configuration -> System Tools" (в Platform) или "Tools -> System Tools" (в In-Portal);
 - в поле "Table Structure" вписать **имя таблицы** (можно без :ref:`const_TABLE_PREFIX`) или
-  :ref:`префикс <uc_Prefix>` от :doc:`unit config </components/unit_configs/configuration_files>`;
+  :ref:`префикс <uc_Prefix>` от :doc:`unit config </components/unit_configs/config_files>`;
 - нажать на кнопку "Go";
 - откроется новое окно со структурой введённой таблицы:
 
@@ -261,3 +261,5 @@
 
 .. _Data Source: http://guide.in-portal.org/rus/index.php/K4:%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5_%D0%BF%D0%BE%D0%BB%D0%B5%D0%B9_%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D1%8B
 .. _Eng Data Source: http://guide.in-portal.org/eng/index.php/K4:Defining_Database%2C_Virtual_and_Calculated_Fields
+
+.. |formatters_link| replace:: :doc:`форматером </components/unit_configs/formatters>`

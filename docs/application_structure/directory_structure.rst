@@ -36,7 +36,7 @@
 
 .. admonition:: Ниже применяются следующие сокращения:
 
-   - ``prefix`` - префикс от :doc:`unit config </components/unit_configs/configuration_files>` в **единственном числе**, напр. event (в единственном числе, из-за правил английского языка)
+   - ``prefix`` - префикс от :doc:`unit config </components/unit_configs/config_files>` в **единственном числе**, напр. event (в единственном числе, из-за правил английского языка)
    - ``prefixx`` - префикс от unit config, только во множественном числе
    - ``helper`` - класс помощник (наследник от класса kHelper)
 

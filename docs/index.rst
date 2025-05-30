@@ -8,12 +8,12 @@ In-Portal Developers Guide
 Это должен знать каждый
 ***********************
 
-- :doc:`/administrative_console_interface/working_with_forms/form_input_elements` - из каких элементов
+- :doc:`/admin_console_ui/forms/form_input_elements` - из каких элементов
   состоят формы редактирования;
 - :doc:`/components/unit_configs/table_field_description` - как описывать
   таблицу базы данных в конфигурационном файле;
 - :doc:`/components/unit_configs/formatters` - настройка формата данных в полях;
-- :doc:`/administrative_console_interface/working_with_templates_and_blocks/adding_sections_in_tree` -
+- :doc:`/admin_console_ui/templates_and_blocks/tree_sections` -
   добавление секций в дереве;
 
 .. toctree::
@@ -24,7 +24,7 @@ In-Portal Developers Guide
    system_setup
    application_structure
    components
-   administrative_console_interface
+   admin_console_ui
    database
    themes_and_templates
    mail_notification_system

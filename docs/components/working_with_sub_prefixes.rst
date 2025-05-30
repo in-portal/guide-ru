@@ -11,10 +11,9 @@
 Подчинённый :ref:`префикс <uc_Prefix>` отличаться от главного тем, что он:
 
 - Не может существовать отдельно без главного.
-- У него упрощена структура :doc:`конфигурационного файла </components/unit_configs/configuration_files>`
+- У него упрощена структура :doc:`конфигурационного файла </components/unit_configs/config_files>`
   (многое объявлено в главном конфигурационном файле).
-- Нет :doc:`секции </administrative_console_interface/working_with_templates_and_blocks/adding_sections_in_tree>`
-  в дереве слева.
+- Нет :doc:`секции </admin_console_ui/templates_and_blocks/tree_sections>` в дереве слева.
 - Записи подчиненного :ref:`префикса <uc_Prefix>` всегда визуально привязаны к редактированию какой-то записи
   главного префикса.
 - При создании/изменении записи в административной консоли вызываются события :doc:`/events/live_editing/on_create`
@@ -217,7 +216,7 @@
 +--------------------------+-----------------------------------------------------------------------+
 
 - Разделы :doc:`TitlePresets </components/unit_configs/working_with_titlepresets_option>`
-  и :doc:`Sections </administrative_console_interface/working_with_templates_and_blocks/adding_sections_in_tree>`
+  и :doc:`Sections </admin_console_ui/templates_and_blocks/tree_sections>`
   не используются для подчинённых префиксов, т.к. они заданы у главного префикса.
 
 Создание шаблонов главного префикса
@@ -438,10 +437,9 @@
 в :ref:`этой статье <combined_header_edit_tab_presets>`.
 
 - На шаблонах ``city_edit.tpl``, ``city_edit_areas.tpl`` нужно передать дополнительный параметр
-  :ref:`element_ch_tab_preset` при использовании блока
-  :doc:`combined_header </administrative_console_interface/working_with_templates_and_blocks/working_with_combined_header_block>`
-  вверху шаблона. Его значение нужно установить равным ``Default`` (или то, что было ранее определено). Например
-  использование блока combined_header в шаблоне ``city_edit.tpl`` будет выглядеть следующим образом:
+  :ref:`element_ch_tab_preset` при использовании блока |combined_header| вверху шаблона. Его значение нужно
+  установить равным ``Default`` (или то, что было ранее определено). Например использование блока combined_header
+  в шаблоне ``city_edit.tpl`` будет выглядеть следующим образом:
 
 .. code:: html
 
@@ -598,9 +596,8 @@
 
 Особенности данного файла:
 
-- При вызове блока
-  :doc:`combined_header </administrative_console_interface/working_with_templates_and_blocks/working_with_combined_header_block>`
-  нужно передать параметры ``title_preset="city_edit_areas"`` и ``tab_preset="Default"``:
+- При вызове блока |combined_header| нужно передать параметры ``title_preset="city_edit_areas"`` и
+  ``tab_preset="Default"``:
 
 .. code:: html
 
@@ -676,9 +673,7 @@
 
 Особенности данного файла:
 
-- При вызове блока
-  :doc:`combined_header </administrative_console_interface/working_with_templates_and_blocks/working_with_combined_header_block>`
-  нужно передать параметр ``title_preset="city_area_edit"``.
+- При вызове блока |combined_header| нужно передать параметр ``title_preset="city_area_edit"``.
 
 .. code:: html
 
@@ -737,9 +732,9 @@
 - Файл: ``city_config.php``.
 
 Набор вкладок (ключ
-:doc:`EditTabPresets </administrative_console_interface/working_with_templates_and_blocks/working_with_combined_header_block>`),
+:doc:`EditTabPresets </admin_console_ui/templates_and_blocks/combined_header_block>`),
 который будет использоваться на форме редактирования подчинённого префикса нужно будет определить
-в :doc:`unit config </components/unit_configs/configuration_files>` главного префикса (т.е. также как
+в :doc:`unit config </components/unit_configs/config_files>` главного префикса (т.е. также как
 и ключ :doc:`TitlePresets </components/unit_configs/working_with_titlepresets_option>`).
 
 .. code:: php
@@ -783,3 +778,5 @@
    ),
 
 .. _Data Source: http://guide.in-portal.org/rus/index.php/K4:%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0_%D1%81_%D0%BF%D0%BE%D0%B4%D1%87%D0%B8%D0%BD%D1%91%D0%BD%D0%BD%D1%8B%D0%BC%D0%B8_%D0%BF%D1%80%D0%B5%D1%84%D0%B8%D0%BA%D1%81%D0%B0%D0%BC%D0%B8
+
+.. |combined_header| replace:: :doc:`combined_header </admin_console_ui/templates_and_blocks/combined_header_block>`

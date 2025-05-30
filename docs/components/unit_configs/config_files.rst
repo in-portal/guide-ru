@@ -85,10 +85,10 @@
 |                                      |                                                                                       |
 | |regular_events_usage|               |                                                                                       |
 +--------------------------------------+---------------------------------------------------------------------------------------+
-| .. config-property::                 | Влияет на то, как переменные данного префикса будут выглядеть в                       |
-|    :name: PortalStyleEnv             | :doc:`переменной окружения </application_structure/environment_variable>`. Если       |
-|    :type: boolean                    | задать в ``true``, то не будет дефиса между префиксом и значением его первой          |
-|    :ref_prefix: uc_                  | переменной, т.е. будет ``m5``, вместо ``m-5`` как обычно.                             |
+| .. config-property::                 | Влияет на то, как переменные данного префикса будут выглядеть в |env_link|            |
+|    :name: PortalStyleEnv             | Если задать в ``true``, то не будет дефиса между префиксом и значением его первой     |
+|    :type: boolean                    | переменной, т.е. будет ``m5``, вместо ``m-5`` как обычно.                             |
+|    :ref_prefix: uc_                  |                                                                                       |
 +--------------------------------------+---------------------------------------------------------------------------------------+
 | .. config-property::                 |                                                                                       |
 |    :name: CatalogItem                |                                                                                       |
@@ -118,8 +118,7 @@
 | .. config-property::                 | .. versionadded:: 5.0.0                                                               |
 |    :name: PassPriority               |                                                                                       |
 |    :type: integer                    | Позволяет указать порядок, в котором данный префикс будет показываться среди          |
-|    :ref_prefix: uc_                  | остальных префиксов при построении значения                                           |
-|                                      | :doc:`переменной окружения </application_structure/environment_variable>`.            |
+|    :ref_prefix: uc_                  | остальных префиксов при построении значения |env_link|.                               |
 +--------------------------------------+---------------------------------------------------------------------------------------+
 | .. config-property::                 | Позволяет добавлять новые hooks в систему.                                            |
 |    :name: Hooks                      |                                                                                       |
@@ -390,14 +389,40 @@
 |    :ref_prefix: uc_                  |                                                                                       |
 +--------------------------------------+---------------------------------------------------------------------------------------+
 
-.. |sections1_sub| replace:: :doc:`секции </administrative_console_interface/working_with_templates_and_blocks/adding_sections_in_tree>`
-.. |sections2_sub| replace:: :doc:`секций </administrative_console_interface/working_with_templates_and_blocks/adding_sections_in_tree>`
+.. versionadded:: 5.2.2-B2
+
+   - BasePath
+
+.. versionadded:: 5.2.0-B1
+
+   - CustomDataTableName
+   - ValidatorClass
+   - Forms
+   - NavigationSelectClause
+   - ProcessPrefixes
+
+.. versionadded:: 5.1.1-B1
+
+   - UserProfileMapping
+
+.. versionadded:: 5.0.3-B2
+
+   - SiteConfigProcessed
+
+.. versionremoved:: 5.0.0
+
+   - CatalogSelectorName
+
+.. |sections1_sub| replace:: :doc:`секции </admin_console_ui/templates_and_blocks/tree_sections>`
+.. |sections2_sub| replace:: :doc:`секций </admin_console_ui/templates_and_blocks/tree_sections>`
+.. |env_link| replace:: :doc:`переменной окружения </application_structure/environment_variable>`
 
 .. |class_registration_usage| replace:: (:doc:`использование </components/unit_configs/class_registration>`)
 .. |regular_events_usage| replace:: (:doc:`использование </components/unit_configs/regular_events>`)
 .. |hooks_usage| replace:: (:doc:`использование </components/unit_configs/hooks>`)
-.. |sections_usage| replace:: (:doc:`использование </administrative_console_interface/working_with_templates_and_blocks/adding_sections_in_tree>`)
+.. |sections_usage| replace:: (:doc:`использование </admin_console_ui/templates_and_blocks/tree_sections>`)
 .. |fields_usage| replace:: (:doc:`использование </components/unit_configs/table_field_description>`)
 
 .. _Data Source: http://guide.in-portal.org/rus/index.php/K4:%D0%9A%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5_%D1%84%D0%B0%D0%B9%D0%BB%D1%8B
 .. _Eng Data Source: http://guide.in-portal.org/eng/index.php/K4:Unit_Configuration_File
+

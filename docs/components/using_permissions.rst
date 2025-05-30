@@ -27,24 +27,19 @@
 Задание списка прав в unit config
 ---------------------------------
 
-Самое первое, что следует сделать для начала работы с правами - задать в
-:doc:`unit config </components/unit_configs/configuration_files>` следующие ключи:
+Самое первое, что следует сделать для начала работы с правами - задать в |unit_config_link| следующие ключи:
 
 - :ref:`uc_PermSection` - ключ первого уровня, в значении которого нужно задать массив с
   указаниями секций, на которые будут проверяться права доступа. У каждого элемента массива ключ означает тип
   секции, а значение её название. В платформе повсеместно используется только тип секции ``main``, а другие другие
   типы секций (``search``, ``email``, ``custom``) используются только в ``In-Portal``. Начинается название
-  :doc:`секции </administrative_console_interface/working_with_templates_and_blocks/adding_sections_in_tree>`
-  проверки прав доступа (как и собственно всех секций, определённых в модуле ``custom``) с названия модуля и
-  двоеточия, например ``custom:``.
-- :ref:`permissions <tree_section_permissions>` - ключ в массиве задания
-  :doc:`секции </administrative_console_interface/working_with_templates_and_blocks/adding_sections_in_tree>`.
-  Определяет список прав, связанных с данным :doc:`unit config </components/unit_configs/configuration_files>`.
-  Обычно содержит стандартные виды прав (``view``, ``add``, ``edit``, ``delete``), а также может содержать
-  индивидуальные права (начинаются с ``advanced:``).
+  |sections1_link| проверки прав доступа (как и
+  собственно всех секций, определённых в модуле ``custom``) с названия модуля и двоеточия, например ``custom:``.
+- :ref:`permissions <tree_section_permissions>` - ключ в массиве задания |sections1_link|.
+  Определяет список прав, связанных с данным |unit_config_link|. Обычно содержит стандартные виды прав
+  (``view``, ``add``, ``edit``, ``delete``), а также может содержать индивидуальные права (начинаются с ``advanced:``).
 
-Следующая выдержка из :doc:`unit config </components/unit_configs/configuration_files>` демонстрирует объявление
-данных ключей:
+Следующая выдержка из |unit_config_link| демонстрирует объявление данных ключей:
 
 .. code:: php
 
@@ -84,13 +79,12 @@
 редактирование выбранной группы пользователей (в секции ``User Management -> Groups``) и перейти на вкладку
 ``Permissions``. Описанная выше форма изображена справа.
 
-Каждая строка формы соответствует
-:doc:`секции в дереве </administrative_console_interface/working_with_templates_and_blocks/adding_sections_in_tree>`.
-В качестве вспомогательной информации при включенном :doc:`DEBUG_MODE </application_debugging/debugger>` под
-именем каждой секции в квадратных скобках отображается её название, под которым она была объявлена в
-:doc:`unit config </components/unit_configs/configuration_files>`, а также :ref:`префикс <uc_Prefix>` данного
+Каждая строка формы соответствует |sections1_link| в дереве. В качестве вспомогательной информации при включенном
+:doc:`DEBUG_MODE </application_debugging/debugger>` под именем каждой секции в квадратных скобках отображается её
+название, под которым она была объявлена в |unit_config_link|, а также :ref:`префикс <uc_Prefix>` данного
 ``unit config``. В форме отображаются стандартные права доступа. При нажатии на ссылку ``Change`` в столбце
-``Additional`` открывается форма редактирования расширенных прав доступа (тех, чьи названия начинаются с ``advanced:``):
+``Additional`` открывается форма редактирования расширенных прав доступа (тех, чьи названия начинаются с
+``advanced:``):
 
 .. figure:: /images/Advanced_permissions.gif
    :figwidth: 180px
@@ -113,10 +107,9 @@
 
 Если требуется, чтобы для конкретного :ref:`префикса <uc_Prefix>` права доступа определялись правами, назначенными
 другому префиксу, следует использовать ключ :ref:`SectionPrefix <uc_SectionPrefix>`. Данный ключ задаётся на
-верхнем уровне :doc:`unit config </components/unit_configs/configuration_files>`. В случае, когда он присутствует,
-ключ :ref:`PermSection <uc_PermSection>` задавать не нужно, т.к. соответствующая
-:doc:`секция </administrative_console_interface/working_with_templates_and_blocks/adding_sections_in_tree>` будет
-определяться по :ref:`префиксу <uc_Prefix>`, указанному в ключе :ref:`uc_SectionPrefix`.
+верхнем уровне |unit_config_link|. В случае, когда он присутствует, ключ :ref:`PermSection <uc_PermSection>`
+задавать не нужно, т.к. соответствующая |sections2_link| будет определяться по :ref:`префиксу <uc_Prefix>`,
+указанному в ключе :ref:`uc_SectionPrefix`.
 
 Использование прав доступа
 ==========================
@@ -146,9 +139,8 @@
 
 При проверке прав доступа для события массив ``kDBEventHandler::permMapping`` обрабатывается по следующим правилам:
 
-- находится ключ с именем события у :doc:`обработчика событий </events>`, объявленного в
-  :doc:`unit config </components/unit_configs/configuration_files>` у :ref:`префикса <uc_Prefix>`, для которого
-  :doc:`событие </events>` вызывается;
+- находится ключ с именем события у :doc:`обработчика событий </events>`, объявленного в |unit_config_link| у
+  :ref:`префикса <uc_Prefix>`, для которого :doc:`событие </events>` вызывается;
 - если данный :ref:`префикс <uc_Prefix>` является :doc:`главным </components/working_with_sub_prefixes>`
   (в конкретном случае, так как один и тот же префикс может быть и
   :doc:`главным, и подчинённым </components/working_with_sub_prefixes>` в разных ситуациях), то получается значение
@@ -177,7 +169,7 @@
   вызывается проверка ``view`` права (т.е. права на просмотр данных). Данная проверка происходит только тогда, когда в
   запросе, полученном сервером присутствует ``ID`` объекта и объект пытается использовать его для
   :doc:`получения данных </application_structure/system_classes/working_with_kdbitem_class>` из
-  :doc:`базы данных </database/working_with_the_database>`.
+  :doc:`базы данных </database/using_database>`.
 
 - В некоторых событиях, изменяющих данные в базе данных (:doc:`/events/live_editing/on_delete`,
   :doc:`/events/lists/on_mass_delete`, :doc:`/events/temp_editing/on_save`, :doc:`/events/lists/on_mass_clone`,
@@ -210,9 +202,7 @@
 | .. config-property::    | Название :doc:`права доступа </database/table_structure/permissions>`, которое будет проверяется.              |
 |    :name: $name         | Название права доступа состоит из 2 частей:                                                                    |
 |    :type: string        |                                                                                                                |
-|    :ref_prefix: app_cp_ | - название                                                                                                     |
-|                         |   :doc:`секции </administrative_console_interface/working_with_templates_and_blocks/adding_sections_in_tree>`  |
-|                         |   (напр. ``custom:phones``);                                                                                   |
+|    :ref_prefix: app_cp_ | - название |sections1_link| (напр. ``custom:phones``);                                                         |
 |                         | - название вида права, которое будет проверяться (напр. ``edit`` или ``advanced:change_price``).               |
 |                         |                                                                                                                |
 |                         | В названии права название секции отделяется от вида права при помощи символа точки ``.``, напр.                |
@@ -231,8 +221,7 @@
 
 .. note::
 
-   Если :doc:`секция </administrative_console_interface/working_with_templates_and_blocks/adding_sections_in_tree>` в
-   названии :doc:`права доступа </database/table_structure/permissions>` совпадает с секцией
+   Если |sections2_link| в названии :doc:`права доступа </database/table_structure/permissions>` совпадает с секцией
    :ref:`префикса <uc_Prefix>`, от которого произошло событие, то для получения названия секции нужно использовать
    метод ``kEvent:getSection`` (т.е. следующий код в :doc:`событии </events>` ``$event->getSection();``.
 
@@ -370,3 +359,7 @@
 .. Broken Links:
    =============
    K4:Projects
+
+.. |sections1_link| replace:: :doc:`секции </admin_console_ui/templates_and_blocks/tree_sections>`
+.. |sections2_link| replace:: :doc:`секция </admin_console_ui/templates_and_blocks/tree_sections>`
+.. |unit_config_link| replace:: :doc:`unit config </components/unit_configs/config_files>`

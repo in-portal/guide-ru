@@ -6,13 +6,12 @@
 данной переменной задано в константе :ref:`const_ENV_VAR_NAME`. Она была введена для того, чтобы реализовать
 возможность компактной передачи большого количества переменных между страницами сайта. В большинстве случаев в ней
 будет содержаться информация, при помощи которой можно будет загрузить объект из
-:doc:`базы данных </database/working_with_the_database>` на странице (т.е. :ref:`префикс <uc_Prefix>` и ``ID``), но
+:doc:`базы данных </database/using_database>` на странице (т.е. :ref:`префикс <uc_Prefix>` и ``ID``), но
 это совсем не обязательно.
 
-Если в :doc:`конфигурационном файле </components/unit_configs/configuration_files>` переданного
-:ref:`префикса <uc_Prefix>` разрешена :ref:`автоматическая загрузка <uc_AutoLoad>`, то при
-первом обращении к объекту :ref:`префикс <uc_Prefix>` которого передан и при наличии его ``ID`` в запросе к серверу
-он будет автоматически загружен.
+Если в |unit_config_link| переданного :ref:`префикса <uc_Prefix>` разрешена
+:ref:`автоматическая загрузка <uc_AutoLoad>`, то при первом обращении к объекту :ref:`префикс <uc_Prefix>` которого
+передан и при наличии его ``ID`` в запросе к серверу он будет автоматически загружен.
 
 .. _структура:
 
@@ -42,7 +41,7 @@
 Далее следует список параметров префикса, которые могут передаваться через переменную окружения,
 разделённых при помощи дефиса (``-``). Названия параметров, а также их порядок в пределах одного
 набора префикса задаётся в ключе :ref:`uc_QueryString` его :doc:`конфигурационного
-файла </components/unit_configs/configuration_files>`. Например:
+файла </components/unit_configs/config_files>`. Например:
 
 .. code:: php
 
@@ -91,7 +90,7 @@
 также, как и любые другие переменные, переданные в запросе к серверу (т.е. при помощи метода ``Application::GetVar``).
 Это будет наглядно показано на ниже приведённом примере.
 
-- Переменные, заданные в :doc:`конфигурационном файле </components/unit_configs/configuration_files>`:
+- Переменные, заданные в |unit_config_link|:
 
 .. code:: php
 
@@ -107,8 +106,7 @@
 
    -template:m0--1--s-:sample\-prefix-15-testing
 
-В выше приведённом примере у префикса ``sample-prefix`` в
-:doc:`конфигурационном файле </components/unit_configs/configuration_files>` определены 2 переменные:
+В выше приведённом примере у префикса ``sample-prefix`` в |unit_config_link| определены 2 переменные:
 ``sample_variable`` и ``another_variable``. В переменной окружения для данного префикса переданы значения этих
 переменных, равные ``15`` и ``testing`` соответственно. После обработки переменной окружения для данного префикса
 будут созданы 2 переменные:
@@ -358,14 +356,12 @@
 | .. config-property:: | :ref:`ID языка <tc_Language_LanguageId>`, на котором нужно показывать                                         |
 |    :name: m_lang     | содержание сайта (также работает и в административной консоли). Если                                          |
 |    :type: int        | не задать, то будет использовано :ref:`ID основного языка <tc_Language_PrimaryLang>`, заданное                |
-|    :ref_prefix: env_ | в :doc:`секции </administrative_console_interface/working_with_templates_and_blocks/adding_sections_in_tree>` |
-|                      | ``Configuration -> Regional``.                                                                                |
+|    :ref_prefix: env_ | в |sections_link| ``Configuration -> Regional``.                                                              |
 +----------------------+---------------------------------------------------------------------------------------------------------------+
 | .. config-property:: | :ref:`ID темы <tc_Theme_ThemeId>`, которую нужно использовать для показывания пользовательской                |
 |    :name: m_theme    | части сайта. Значение данной переменной не используется в административной консоли. Если не                   |
 |    :type: int        | задать, то будет использовано :ref:`ID основной темы <tc_Theme_PrimaryTheme>`, заданное в                     |
-|    :ref_prefix: env_ | :doc:`секции </administrative_console_interface/working_with_templates_and_blocks/adding_sections_in_tree>`   |
-|                      | ``Configuration -> Themes``.                                                                                  |
+|    :ref_prefix: env_ | |sections_link| ``Configuration -> Themes``.                                                                  |
 +----------------------+---------------------------------------------------------------------------------------------------------------+
 | .. config-property:: | Данная переменная используется для того, чтобы после при нажатии на кнопки ``Save``                           |
 |    :name: m_opener   | (события :doc:`/events/temp_editing/on_save`, :doc:`/events/live_editing/on_create`,                          |
@@ -385,8 +381,7 @@
 |                      | массива ``opener_stack_<m_wid>`` для текущего окна:                                                           |
 |                      |                                                                                                               |
 |                      | - ``r`` (reset) - стереть массив (используется для построения ссылок для                                      |
-|                      |   :doc:`секций </administrative_console_interface/working_with_templates_and_blocks/adding_sections_in_tree>` |
-|                      |   в дереве);                                                                                                  |
+|                      |   :doc:`секций </admin_console_ui/templates_and_blocks/tree_sections>` в дереве);                             |
 |                      | - ``d`` (down) - добавить текущий шаблон в массив (используется при переходе на шаблон                        |
 |                      |   редактирования записи с шаблона списка записей);                                                            |
 |                      | - ``u`` (up) - удалить последний шаблон из массива (используется при возвращении с шаблона                    |
@@ -405,3 +400,6 @@
 .. _Data Source: http://guide.in-portal.org/rus/index.php/K4:%D0%9F%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F_%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F
 .. _Eng Data Source: http://guide.in-portal.org/eng/index.php/K4:Environment_Variable
 .. _Confluence: http://community.in-portal.org/pages/viewpage.action?pageId=14155813
+
+.. |unit_config_link| replace:: :doc:`конфигурационном файле </components/unit_configs/config_files>`
+.. |sections_link| replace:: :doc:`секции </admin_console_ui/templates_and_blocks/tree_sections>`
