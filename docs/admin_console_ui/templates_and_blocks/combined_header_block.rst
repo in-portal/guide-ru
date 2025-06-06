@@ -7,6 +7,11 @@
    :type: string
    :ref_prefix: element_ch_
 
+.. config-property::
+   :name: section
+   :type: string
+   :ref_prefix: element_ch_
+
 .. _combined_header_edit_tab_presets:
 
 Шаблоны вкладок

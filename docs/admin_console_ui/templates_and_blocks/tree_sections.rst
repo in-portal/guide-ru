@@ -8,6 +8,11 @@
    :ref_prefix: tree_section_
 
 .. config-property::
+   :name: label
+   :type: string
+   :ref_prefix: tree_section_
+
+.. config-property::
    :name: permissions
    :type: array
    :ref_prefix: tree_section_

@@ -57,7 +57,7 @@ Site Configs
 +--------------------------------------+------------------------------------------------------------------------------------------------+
 | .. config-property::                 | В данной переменной перечисляются названия кнопок на панели инструментов, которые              |
 |    :name: $remove_buttons            | нужно спрятать. Кнопки указываются отдельно для каждого требуемого                             |
-|    :type: array                      | :doc:`title preset </components/unit_configs/working_with_titlepresets_option>`.               |
+|    :type: array                      | :doc:`title preset </components/unit_configs/titlepresets_option>`.                            |
 |                                      |                                                                                                |
 |                                      | .. code:: php                                                                                  |
 |                                      |                                                                                                |

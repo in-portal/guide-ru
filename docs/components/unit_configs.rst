@@ -14,6 +14,6 @@ Unit Configs
    unit_configs/formatters
    unit_configs/hooks
    unit_configs/regular_events
-   unit_configs/working_with_titlepresets_option
+   unit_configs/titlepresets_option
 
 .. _Data Source: http://guide.in-portal.org/rus/index.php/Category:Unit_Configs

@@ -128,7 +128,7 @@
 Особенности данного конфигурационного файла:
 
 - Задание подчиненного префикса ``area`` строкой кода ``'SubItems' => Array('area'),``.
-- В ключе массива :doc:`TitlePresets </components/unit_configs/working_with_titlepresets_option>`
+- В ключе массива :doc:`TitlePresets </components/unit_configs/titlepresets_option>`
   по мимо стандартных секций ``default``, ``city_list``, ``city_edit`` есть еще 2 дополнительные секции,
   которые описывают список районов города ``city_edit_areas`` и форму редактирования района ``city_area_edit``.
 
@@ -215,7 +215,7 @@
 |    :type: boolean        |                                                                       |
 +--------------------------+-----------------------------------------------------------------------+
 
-- Разделы :doc:`TitlePresets </components/unit_configs/working_with_titlepresets_option>`
+- Разделы :doc:`TitlePresets </components/unit_configs/titlepresets_option>`
   и :doc:`Sections </admin_console_ui/templates_and_blocks/tree_sections>`
   не используются для подчинённых префиксов, т.к. они заданы у главного префикса.
 
@@ -735,7 +735,7 @@
 :doc:`EditTabPresets </admin_console_ui/templates_and_blocks/combined_header_block>`),
 который будет использоваться на форме редактирования подчинённого префикса нужно будет определить
 в :doc:`unit config </components/unit_configs/config_files>` главного префикса (т.е. также как
-и ключ :doc:`TitlePresets </components/unit_configs/working_with_titlepresets_option>`).
+и ключ :doc:`TitlePresets </components/unit_configs/titlepresets_option>`).
 
 .. code:: php
 
