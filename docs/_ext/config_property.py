@@ -16,12 +16,14 @@ class ConfigProperty(Directive):
         'name': directives.unchanged_required,
         'type': directives.unchanged,
         'ref_prefix': directives.unchanged,
+        'required': directives.unchanged,
     }
 
     def run(self):
         name = self.options.get('name') # variable name (e.g., Require_SSL)
         type = self.options.get('type') # data type (e.g., int, string, bool)
         ref_prefix = self.options.get('ref_prefix') # prefix for referencing this link on another page (e.g., cfg_)
+        required = self.options.get('required') # is the variable required
 
         ret = []
 
@@ -47,6 +49,10 @@ class ConfigProperty(Directive):
         if type is not None:
             type_node = nodes.emphasis(text=" (" + type + ")")
             ret.append(type_node)
+
+        if required is not None:
+            required_node = nodes.strong(text=" *")
+            ret.append(required_node)
 
         return ret
 
