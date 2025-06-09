@@ -45,9 +45,9 @@ copyright = u'1997, In-Portal'
 # built documents.
 #
 # The short X.Y version.
-version = '4.3'
+version = '5.0'
 # The full version, including alpha/beta/rc tags.
-release = '4.3.9'
+release = '5.0.0'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
