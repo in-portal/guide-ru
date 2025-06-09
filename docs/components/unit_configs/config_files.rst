@@ -389,30 +389,6 @@
 |    :ref_prefix: uc_                  |                                                                                       |
 +--------------------------------------+---------------------------------------------------------------------------------------+
 
-.. versionadded:: 5.2.2-B2
-
-   - BasePath
-
-.. versionadded:: 5.2.0-B1
-
-   - CustomDataTableName
-   - ValidatorClass
-   - Forms
-   - NavigationSelectClause
-   - ProcessPrefixes
-
-.. versionadded:: 5.1.1-B1
-
-   - UserProfileMapping
-
-.. versionadded:: 5.0.3-B2
-
-   - SiteConfigProcessed
-
-.. versionremoved:: 5.0.0
-
-   - CatalogSelectorName
-
 .. |sections1_sub| replace:: :doc:`секции </admin_console_ui/templates_and_blocks/tree_sections>`
 .. |sections2_sub| replace:: :doc:`секций </admin_console_ui/templates_and_blocks/tree_sections>`
 .. |env_link| replace:: :doc:`переменной окружения </application_structure/environment_variable>`
