@@ -10,3 +10,8 @@ Language
    :name: PrimaryLang
    :type: int
    :ref_prefix: tc_Language_
+
+.. config-property::
+   :name: UnitSystem
+   :type: int
+   :ref_prefix: tc_Language_
