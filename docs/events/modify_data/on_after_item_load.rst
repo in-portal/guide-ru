@@ -14,7 +14,7 @@ OnAfterItemLoad
 
 .. code::
 
-  OnItemBuild -> kDBEventHandler::LoadItem -> kDBItem::Load -> kDBItem::raiseEvent
+   OnItemBuild -> kDBEventHandler::LoadItem -> kDBItem::Load -> kDBItem::raiseEvent
 
 Входные параметры
 -----------------
@@ -56,5 +56,9 @@ OnAfterItemLoad
 -----------
 
 Данное событие вызывается только после успешной загрузки объекта из базы данных.
+
+.. seealso::
+
+   - :doc:`/application_structure/system_classes/working_with_kdbitem_class`
 
 .. _Data Source: http://guide.in-portal.org/rus/index.php/EventHandler:OnAfterItemLoad
