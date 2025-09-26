@@ -10,6 +10,7 @@
    lists/set_custom_query
    lists/on_mass_clone
    lists/on_mass_delete
+   lists/on_delete_all
    lists/on_mass_approve
    lists/on_mass_decline
    lists/on_mass_move_up
