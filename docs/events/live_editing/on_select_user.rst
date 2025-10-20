@@ -14,7 +14,7 @@ OnSelectUser
 Вызывает события
 ----------------
 
-- ``kDBEventHandler::RemoveRequiredFields`` отключает все required поля
+- :doc:`/events/live_editing/remove_required_fields` отключает все required поля
 - если форма открыта для создания записи то вызывает метод :doc:`kDBItem::Create </application_structure/system_classes/working_with_kdbitem_class>`
 - если форма открыта для изменения записи то вызывает метод :doc:`kDBItem::Update </application_structure/system_classes/working_with_kdbitem_class>`
 
