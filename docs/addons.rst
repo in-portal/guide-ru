@@ -10,5 +10,6 @@
    addons/coding_standards
    addons/creating_import_scripts
    addons/terms
+   addons/writing_an_article
 
 .. _Data Source: http://guide.in-portal.org/rus/index.php/Category:%D0%94%D0%BE%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F
